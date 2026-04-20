@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AWS Project</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        input {
+            padding: 10px;
+            width: 85%;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        img {
+            margin-top: 15px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My AWS + GitHub Project</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <h2>Welcome</h2>
+        <p>Virtual Campus Tour Project</p>
+
+        <input id="nameInput" type="text" placeholder="Enter your name">
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <a href="https://github.com" target="_blank">Visit GitHub</a>
+
+        <img src="https://via.placeholder.com/200" alt="Sample Image">
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 My Project</p>
+</footer>
+
+<script>
+function showMessage() {
+    let name = document.getElementById("nameInput").value;
+
+    if(name === "") {
+        alert("Please enter your name!");
+    } else {
+        alert("Welcome " + name + "!");
+    }
+}
+</script>
+
+</body>
+</html>
